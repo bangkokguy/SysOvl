@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SysOvl</string>
+    <string name="hello_world">Mr. White</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_result">SysOvl/Settings</string>
+
+    <string name="pref_sync">SysOvl</string>
+    <string name="pref_sync_summ">SysOvl</string>
+    <string name="pref_syncConnectionType">SysOvl</string>
+
+    ---
+    <string name="t_autostart">Start on boot</string>
+    <string name="s_autostart">If on, the battery bar service will be started automatically.</string>
+    <string name="t_devmode">Dev. mode</string>
+    <string name="s_devmode">If set, additional developer options can be defined.</string>
+    <string name="t_debugtext">Show debug text</string>
+    <string name="s_debugtext">If set, the red text with additional info below the battery bar will be shown.</string>
+    <string name="t_cat1">General settings</string>
+    <string name="t_cat2">Development settings</string>
+
+----
+
+
+    <string name="t_chargeled">LED while charging</string>
+    <string name="s_chargeled">If on, the phone LED will be used to show the battery charging level while charging.</string>
+    <string name="t_textlog">Use text file for logging</string>
+    <string name="s_textlog">If set, the log messages will be sent to a text file.</string>
+    <string name="t_log">Log debug messages</string>
+    <string name="s_log">If set, debug messages will be sent to the system log.</string>
+    <string name="t_logfilename">Log file name</string>
+    <string name="s_logfilename">The name of the log file. Default is \"SysOvl.log\" The log file will be created in the root of the external sdcard if exist, or in the internal storage if doesn\'t.</string>
+
+    <string-array name="p_thickness_entries">
+        <item>Extra thin</item>
+        <item>Thin</item>
+        <item>Medium</item>
+        <item>Thick</item>
+        <item>Extra thick</item>
+    </string-array>
+
+
+    <string-array name="p_thickness_values">
+        <item>2</item>
+        <item>4</item>
+        <item>8</item>
+        <item>12</item>
+        <item>16</item>
+    </string-array>
+
+    <string name="p_thickness_default">4</string>
+
+</resources>

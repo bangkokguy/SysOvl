@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <PreferenceCategory
+        android:title="@string/t_cat1">
+        <CheckBoxPreference
+            android:title="@string/t_autostart"
+            android:summary="@string/s_autostart"
+            android:defaultValue="false"
+            android:key="p_autostart"/>
+       <ListPreference
+            android:title="Battery bar thickness"
+            android:dialogTitle="Select one of the values"
+            android:entries="@array/p_thickness_entries"
+            android:entryValues="@array/p_thickness_values"
+            android:defaultValue="@string/p_thickness_default"
+            android:key="p_thickness"/>
+       <CheckBoxPreference
+           android:title="@string/t_chargeled"
+           android:summary="@string/s_chargeled"
+           android:defaultValue="false"
+           android:key="p_chargeled"/>
+       </PreferenceCategory>
+
+   <PreferenceCategory
+        android:title="@string/t_cat2">
+
+        <SwitchPreference
+            android:title="@string/t_devmode"
+            android:defaultValue="false"
+            android:summary="@string/s_devmode"
+            android:key="p_devmode" />
+
+        <CheckBoxPreference
+            android:dependency="p_devmode"
+            android:title="@string/t_debugtext"
+            android:defaultValue="false"
+            android:summary="@string/s_debugtext"
+            android:key="p_debugtext" />
+
+       <CheckBoxPreference
+            android:dependency="p_devmode"
+            android:title="@string/t_log"
+            android:defaultValue="false"
+            android:summary="@string/s_log"
+            android:key="p_log" />
+
+       <CheckBoxPreference
+           android:dependency="p_log"
+           android:title="@string/t_textlog"
+           android:summary="@string/s_textlog"
+           android:defaultValue="false"
+           android:key="p_textlog"/>
+
+       <EditTextPreference
+           android:dependency="p_textlog"
+           android:title="@string/t_logfilename"
+           android:summary="@string/s_logfilename"
+           android:defaultValue="SysOvl.log"
+           android:key="p_logfilename"/>
+
+   </PreferenceCategory>
+
+</PreferenceScreen>
+
